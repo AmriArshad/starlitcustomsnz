@@ -22,8 +22,6 @@ jobs:
           node-version: 20
       - name: Install dependencies
         run: npm ci
-      - name: Install Tailwind integration
-        run: npx astro add tailwind --yes
       - name: Build
         run: npm run build
       - name: Upload artifact
