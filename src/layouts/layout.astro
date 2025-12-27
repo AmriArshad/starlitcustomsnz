@@ -1,0 +1,27 @@
+---
+interface Props {
+    title: string;
+    description?: string;
+}
+
+const {
+    title,
+    description = "Professional fibre-optic starlight headliner installations in Auckland, New Zealand",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+        <meta name="generator" content={Astro.generator} />
+        <link rel="stylesheet" href="/styles/global.css" />
+        <title>{title}</title>
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>
