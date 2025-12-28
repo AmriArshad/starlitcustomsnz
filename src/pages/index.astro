@@ -2,7 +2,7 @@
 import Image from "astro/components/Image.astro";
 import logo from "../../public/logo.png";
 import Layout from "../layouts/layout.astro";
-import '../styles/index.css';
+import "../styles/index.css";
 ---
 
 <Layout title="Starlit Customs | Premium Starlight Headliner Installations NZ">
@@ -13,7 +13,13 @@ import '../styles/index.css';
 			<div class="stars"></div>
 			<div class="container">
 				<div class="hero-content">
-					<Image src={logo} alt="Starlit Customs" class="logo" />
+					<Image
+						src={logo}
+						alt="Starlit Customs"
+						class="logo"
+						width={1093}
+						height={1000}
+					/>
 					<h1 class="hero-title">
 						Transform Your Interior<br />
 						<span class="gradient-text">Into A Night Sky</span>
